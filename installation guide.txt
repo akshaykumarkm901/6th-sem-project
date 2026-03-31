@@ -1,0 +1,28 @@
+Create a virtual environment and activate it (recommended)
+
+Open your command prompt and change your project directory to AI-Resume-Analyzer and run the following command
+
+python -m venv venvapp
+
+cd venvapp/Scripts
+
+activate
+Downloading packages from requirements.txt inside App folder
+
+cd../..
+
+cd App
+
+plz install  Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+
+
+pip install -r requirements.txt
+
+if pip install fails then use conda(Miniconda3-latest-Windows-x86_64.exe)
+conda install --file requirements.txt
+
+
+python -m spacy download en_core_web_sm
+
+
+streamlit run App.py
